@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="cards-container grid grid-cols-3 gap-4">
-                    <div class="card-1 bg-[#F4F7FF] p-4 rounded ">
+                    <div class="card card-1  bg-[#F4F7FF] p-4 rounded ">
                         <button class="bg-white px-4 py-2 rounded-xl">ShopEase</button>
                         <h2 class="p-2 text-xl font-lg">Fix Mobile Button Issue </h2>
                         <p class="bg-white p-4">Debug using Chrome <br> DevTools, check for overlappin</p>
@@ -85,7 +85,7 @@
                                 class="complete-btn bg-blue-700 px-4 py-2 rounded-xl text-white  disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                         </div>
                     </div>
-                    <div class="card-2 bg-[#F4F7FF] p-4 rounded ">
+                    <div class=" card card-2 bg-[#F4F7FF] p-4 rounded ">
                         <button class="bg-white px-4 py-2 rounded-xl">CloudSync</button>
                         <h2 class="p-2 text-xl font-lg">Add Dark Mode </h2>
                         <p class="bg-white p-4">Store the user's preference in <br> localStorage, update CSS </p>
@@ -98,7 +98,7 @@
                                 class=" complete-btn  bg-blue-700 px-4 py-2 rounded-xl text-white disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                         </div>
                     </div>
-                    <div class="card-3 bg-[#F4F7FF] p-4  rounded">
+                    <div class=" card card-3 bg-[#F4F7FF] p-4  rounded">
                         <button class="bg-white px-4 py-2 rounded-xl">SwiftPay</button>
                         <h2 class="p-2 text-xl font-lg">Optimize Home page  </h2>
                         <p class="bg-white p-4">Debug using Chrome <br> DevTools, check for overlappin</p>
@@ -111,7 +111,7 @@
                                 class="complete-btn  bg-blue-700 px-4 py-2 rounded-xl text-white disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                         </div>
                     </div>
-                    <div class="card-4 bg-[#F4F7FF] p-4 rounded ">
+                    <div class="card card-4 bg-[#F4F7FF] p-4 rounded ">
                         <button class="bg-white px-4 py-2 rounded-xl">Meta</button>
                         <h2 class="p-2 text-xl font-lg">Add new emoji </h2>
                         <p class="bg-white p-4">Debug using Chrome <br> DevTools, check for overlappin</p>
@@ -124,7 +124,7 @@
                                 class=" complete-btn disabled:bg-slate-300 disabled:text-black bg-blue-700 px-4 py-2 rounded-xl text-white disabled:cursor-not-allowed">Completed</button>
                         </div>
                     </div>
-                    <div class="card-5 bg-[#F4F7FF] p-4  rounded">
+                    <div class="card card-5 bg-[#F4F7FF] p-4  rounded">
                         <button class="bg-white px-4 py-2 rounded-xl">Google LLC</button>
                         <h2 class="p-2 text-xl font-lg">Integrate OpenAI API </h2>
                         <p class="bg-white p-4">Debug using Chrome <br> DevTools, check for overlappin</p>
@@ -137,7 +137,7 @@
                                 class="complete-btn bg-blue-700 px-4 py-2 rounded-xl text-white  disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                         </div>
                     </div>
-                    <div class="card-6 bg-[#F4F7FF] p-4  rounded ">
+                    <div class=" card card-6 bg-[#F4F7FF] p-4  rounded ">
                         <button class="bg-white px-4 py-2 rounded-xl">Glassdoar</button>
                         <h2 class="p-2 text-xl font-lg">Improve Job searching</h2>
                         <p class="bg-white p-4">Debug using Chrome <br> DevTools, check for overlappin</p>
@@ -150,20 +150,18 @@
                                 class="complete-btn bg-blue-700 px-4 py-2 rounded-xl text-white  disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
             <div class="right-side-box row-span-3 bg-white rounded-xl p-4 ">
-                <div class="activity text-center border-b-2 border-dashed border-gray-400">
+                <div class="activity text-center border-b-2 border-dashed border-gray-400 mb-4">
                     <div class="flex justify-center items-center gap-2 mb-4">
                         <img src="./images/activity.png" alt="">
                         <p>Activity Log</p>
                     </div>
-                    <button class="bg-blue-700 px-10 py-3 rounded-2xl text-white text-xl mb-5">Clear History</button>
+                    <button id="clear-btn" class="bg-blue-700 px-10 py-3 rounded-2xl text-white text-xl mb-5">Clear
+                        History</button>
                 </div>
+                <div id="history-div"></div>
             </div>
 
 
@@ -171,7 +169,8 @@
     </main>
 
 
-    <script src="./scripts/utilities.js"></script>
+    <script src=" ./scripts/utilities.js"></script>
+    <script src="./scripts/date.js"></script>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/toggle.js"></script>
     <script src="./scripts/discover.js"></script>
