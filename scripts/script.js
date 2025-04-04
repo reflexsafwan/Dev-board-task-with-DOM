@@ -1,3 +1,12 @@
+const dateAndTime = new Date();
+const date = dateAndTime.toDateString().slice(0, 15);
+const day = date.slice(0, 3);
+const month = date.slice(4, 15);
+
+const time = dateAndTime.toLocaleTimeString();
+setInnerText("day", day);
+setInnerText("month", month);
+
 const completeButtons = document.querySelectorAll(".complete-btn");
 
 let taskAssigned = parseInt(getInnerText("task-assigned"));
@@ -26,9 +35,18 @@ for (const btn of completeButtons) {
 // historyDiv.innerHtml = "hello";
 
 function showHistory(title) {
+  const dateAndTime = new Date();
+  const date = dateAndTime.toDateString().slice(0, 15);
+  const day = date.slice(0, 3);
+  const month = date.slice(4, 15);
+
+  const time = dateAndTime.toLocaleTimeString();
+  setInnerText("day", day);
+  setInnerText("month", month);
+
   const div = document.createElement("div");
-  div.innerHtml =
-    div.innerHTML = `<div class="bg-[#F4F7FF] p-3 mb-7 rounded-lg">
+
+  div.innerHTML = `<div class="bg-[#F4F7FF] p-3 mb-7 rounded-lg">
   <p>You have Complete The Task ${title} at ${time}</p>
 </div>`;
   return div;
